@@ -1,15 +1,12 @@
 import React from 'react'
 
 const App2 = () => {
-  return (
-    <div>
-         <nav className="navbar ">
-  <div className="container-fluid">
-       ← Details
+  return (<>
     
-  </div>
-</nav>
+    <div>
+        <h1>hello sachin</h1>
     </div>
+    </>
   )
 }
 

@@ -1,16 +1,27 @@
-import React from 'react'
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ title }) => {
+
+  const navigate = useNavigate();
+  const arrow = "<-";
   return (
     <div>
       <nav className="navbar ">
-  <div className="container-fluid">
-       Movie Reviewer
-    
-  </div>
-</nav>
-  </div>
-  )
-}
+        <div style={{
+          display: "flex",
+          flexDirection: "row",
+        }} >
+          {
+            title=="Details"? <div onClick={()=>{
+              navigate("/");
+            }} >{arrow}</div> : <></>
+          }
+          <div className="container-fluid">{title}</div>
+        </div>
+      </nav>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

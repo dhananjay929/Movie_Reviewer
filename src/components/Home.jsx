@@ -1,9 +1,16 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Navbar from './Navbar';
+import Alert from'./Alert';
 
 const Home = () => {
   const navigate= useNavigate();
+  // function empty(x) {
+  //   if(x==''){
+  //   <Alert/>
+  //  }
+   
+  
   return (
     <>
     <Navbar title={"Movies App"} />
@@ -16,6 +23,6 @@ const Home = () => {
     </div>
     </>
   )
-}
+  }
 
 export default Home

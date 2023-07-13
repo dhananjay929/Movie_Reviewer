@@ -35,3 +35,26 @@ border: none;
 hr{
   color: white;
 }
+#arr{
+  margin-left: 10px;
+  
+}
+#arr:hover{
+  cursor: pointer;
+}
+#img{
+  margin-top: 40px;
+  border: 1px solid rgb(255, 35, 98);
+  width: 200px;
+  height: 320px;
+}
+#imgdiv{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+#info{
+  text-align: center;
+  font-size:20px;
+  color: rgb(255, 35, 98);
+}
